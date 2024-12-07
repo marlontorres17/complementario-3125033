@@ -1,0 +1,6 @@
+Año,Porcentaje de adopción (%),Reducción de caídas del sistema (%),Mejoramiento en la recuperación (%),Aumento de fiabilidad (%)
+2018,15,10,5,20
+2019,20,15,10,25
+2020,25,20,15,30
+2021,30,25,20,35
+2022,35,30,25,40

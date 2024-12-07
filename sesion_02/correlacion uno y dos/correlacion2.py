@@ -2,27 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Datos para microservicios
-data_micro = {
-    "Año": [2018, 2019, 2020, 2021, 2022],
-    "Adopción en empresas medianas (%)": [35, 45, 55, 60, 70],
-    "Adopción en empresas grandes (%)": [40, 50, 65, 70, 80],
-    "Tiempo de implementación promedio (meses)": [9, 8, 7, 6, 5],
-    "Costo de implementación promedio (USD)": [120000, 115000, 110000, 105000, 100000]
-}
-df_micro = pd.DataFrame(data_micro)
+# Cargar datoa
+df_micro = pd.read_csv('microservicios.csv')
+df_eventos = pd.read_csv('diseno_eventos.csv')
 
-# Datos para diseño basado en eventos
-data_eventos = {
-    "Año": [2018, 2019, 2020, 2021, 2022],
-    "Adopción global (%)": [25, 30, 35, 40, 50],
-    "Eventos manejados por segundo (media)": [1000, 1200, 1500, 1800, 2000],
-    "Reducción de tiempo de respuesta (%)": [10, 12, 15, 18, 20],
-    "Aumento de rendimiento (%)": [5, 8, 10, 12, 15]
-}
-df_eventos = pd.DataFrame(data_eventos)
-
-# Gráficas de dispersión con líneas de regresión
+# Gráficas de dispersión
 plt.figure(figsize=(15, 10))
 
 # Microservicios: Tiempo vs. Adopción en empresas grandes

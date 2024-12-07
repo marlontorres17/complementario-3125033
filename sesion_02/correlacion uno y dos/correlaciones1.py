@@ -30,7 +30,7 @@ correlation_micro = df_micro.corr()
 # Correlaciones para Diseño basado en eventos
 correlation_eventos = df_eventos.corr()
 
-# Graficar heatmaps
+# Graficar
 plt.figure(figsize=(12, 5))
 
 # Heatmap Microservicios

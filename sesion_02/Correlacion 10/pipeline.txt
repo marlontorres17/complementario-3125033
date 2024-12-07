@@ -1,0 +1,6 @@
+Año,Porcentaje de adopción en grandes empresas (%),Tiempo de entrega reducido (%),Errores de integración reducidos (%),Productividad incrementada (%)
+2018,40,10,5,15
+2019,50,15,10,20
+2020,60,20,15,25
+2021,70,25,20,30
+2022,80,30,25,35
