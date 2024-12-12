@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, english]{babel}
+\usepackage{csquotes}
+\usepackage{apacite}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Otro Artículo Más Sobre Patrones de Diseño Estructurales}
+\author{Marlon Estiven Torres Medina \\ Facultad Sena \\ \texttt{marlontorresmedina@gmail.com}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Structural design patterns are like clever tricks for organizing software. They make it easier to build systems where everything works well together, even if it's complex. These patterns are all about connecting pieces of code in smart ways, so it's simpler to manage and improve things later. For example, there's the Adapter pattern, which helps incompatible systems talk to each other, and the Composite pattern, which is perfect for organizing things like folders within folders. By using these patterns, developers can save time, reuse code, and keep their programs flexible and easy to update. They’re kind of like secret weapons for creating solid and scalable apps!
+\end{abstract}
+
+\textbf{Palabras clave:} Patrones de diseño estructurales, Desarrollo de software, Flexibilidad en el código, Reutilización de código, Organización del software, Adaptador, Compuesto, Decorador, Mantenimiento del software, Escalabilidad.
+
+\section*{Introducción}
+Cuando estás creando algo complicado, como un programa grande, puede complicarse rápidamente. Ahí es donde entran los patrones de diseño estructural: son como códigos de trucos para organizarlo todo. Imagínese intentar hacer un juego de Lego sin instrucciones. Claro, podrías improvisar, pero llevaría mucho más tiempo y probablemente se desmoronaría. Estos patrones le brindan esas ``instrucciones'' para asegurarse de que todo encaje bien.
+
+Lo bueno de estos patrones es que son súper flexibles. No es necesario reinventar la rueda cada vez que necesitas construir algo. En su lugar, puede elegir uno de estos patrones, modificarlo según sus necesidades y boom: su software está más organizado, es más fácil de entender y de mantener. Ya sea que estés conectando sistemas nuevos y antiguos o intentando ahorrar memoria en un juego, existe un patrón para eso.
+
+\section*{Los patrones de diseño estructural en el desarrollo de software}
+Los patrones de diseño estructural desempeñan un papel crucial en el desarrollo de software, ya que proporcionan un marco para ensamblar objetos y clases en estructuras más grandes y complejas, manteniendo al mismo tiempo la flexibilidad y la eficiencia \cite{ref1}. Estos patrones se centran en la composición de clases y objetos, lo que permite a los desarrolladores crear sistemas que son más fáciles de administrar y extender \cite{ref2}. El propósito principal de los patrones de diseño estructural es abordar los desafíos comunes relacionados con la composición de objetos, lo que permite a los desarrolladores reutilizar el código existente y promover una mejor organización dentro de sus aplicaciones. Al adoptar estos patrones, los diseñadores de software pueden mejorar la capacidad de mantenimiento y la escalabilidad de sus sistemas, lo que en última instancia conduce a soluciones de software más sólidas.
+
+Las características clave de los patrones estructurales incluyen su enfoque en la composición y su capacidad para mejorar la reutilización del código \cite{ref1}. Estos patrones facilitan la creación de estructuras flexibles y eficientes al permitir a los desarrolladores definir relaciones entre clases y objetos de una manera que promueve el acoplamiento flexible y una alta cohesión \cite{ref2}. Por ejemplo, los patrones estructurales a menudo emplean técnicas como la herencia y la delegación para lograr sus objetivos. Esto significa que, en lugar de crear clases estrechamente vinculadas, los desarrolladores pueden usar interfaces o clases abstractas para definir comportamientos comunes, lo que permite modificaciones y extensiones más sencillas en el futuro.
+
+\subsection*{Tipos de patrones de diseño estructural y sus aplicaciones}
+\textbf{El patrón adaptador} es un patrón de diseño estructural fundamental que facilita la colaboración entre objetos con interfaces incompatibles \cite{ref3}. Este patrón es particularmente útil cuando se integran sistemas heredados o bibliotecas de terceros que no se alinean con la arquitectura actual de una aplicación \cite{ref4}. Al crear un adaptador, los desarrolladores pueden convertir la interfaz de una clase en una diferente a la que espera el cliente, lo que permite una comunicación fluida entre sistemas dispares \cite{ref5}. Los casos de uso comunes para el patrón adaptador incluyen escenarios en los que:\newline
+- El código heredado debe funcionar con nuevos sistemas.\newline
+- Diferentes bibliotecas o marcos deben interactuar.\newline
+- Los componentes reutilizables requieren adaptación para contextos específicos.\newline
+Esta versatilidad hace que el patrón adaptador sea una opción crucial en varios proyectos de desarrollo de software.
+
+\textbf{El patrón compuesto} sirve como otro patrón de diseño estructural vital que permite a los desarrolladores componer objetos en estructuras de árbol, tratando tanto los objetos individuales como las composiciones de manera uniforme \cite{ref6}. Este diseño es particularmente beneficioso para representar jerarquías de partes y totalidades, lo que permite a los clientes trabajar con estas estructuras como si fueran objetos singulares \cite{ref7}. El patrón compuesto se emplea a menudo en situaciones como:\newline
+- Creación de interfaces gráficas de usuario con componentes anidados.\newline
+- Representación de sistemas de archivos como estructuras jerárquicas.\newline
+- Gestión de estructuras de datos complejas como organigramas.\newline
+Al emplear el patrón compuesto, los desarrolladores pueden simplificar la gestión de estructuras complejas, lo que permite una mayor flexibilidad y escalabilidad en sus aplicaciones \cite{ref8}.
+
+\textbf{El patrón decorador} es un patrón de diseño estructural que permite a los desarrolladores mejorar dinámicamente la funcionalidad de los objetos existentes sin modificar su estructura \cite{ref9}. Esto se logra colocando los objetos dentro de objetos encapsulantes, que agregan nuevos comportamientos o responsabilidades en tiempo de ejecución \cite{ref10}. El patrón decorador es particularmente útil en escenarios en los que:\newline
+- Un objeto necesita ser ampliado con nueva funcionalidad sin alterar su comportamiento principal.\newline
+- Se requieren múltiples combinaciones de funcionalidades sin crear una multitud de subclases.\newline
+- Surge la necesidad de adherirse al principio de responsabilidad única manteniendo la funcionalidad separada.\newline
+Al utilizar el patrón Decorador, los desarrolladores pueden mantener un código limpio y al mismo tiempo permitir la incorporación flexible de funciones, lo que genera diseños de software más adaptables y fáciles de mantener \cite{ref11}.
+
+\section*{Conclusiones}
+En resumen, los patrones de diseño estructurales son herramientas súper útiles para hacer que el desarrollo de software sea más organizado y fácil de manejar. Ayudan a resolver problemas comunes, como trabajar con sistemas diferentes o mantener el código ordenado cuando las cosas se complican. Gracias a estos patrones, se puede ahorrar tiempo, reutilizar partes del código y hacer que las aplicaciones sean más flexibles y adaptables.
+
+Por ejemplo, patrones como el Adaptador hacen que sistemas incompatibles puedan trabajar juntos, mientras que el Compuesto permite manejar jerarquías de datos como si fueran una sola unidad. Además, el Decorador es genial para añadir funciones sin desordenar el diseño original. Cada uno de estos patrones tiene su propio propósito, pero todos tienen en común que ayudan a crear software que no solo funciona mejor, sino que también es más fácil de actualizar y mantener.
+
+En pocas palabras, aprender y usar patrones estructurales puede marcar una gran diferencia para cualquier desarrollador, haciendo que el proceso sea menos estresante y los resultados mucho más sólidos.
+
+\section*{Referencias}
+\begin{enumerate}
+    \item Patrones estructurales. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://refactoring.guru/es/design-patterns/structural-patterns}
+    \item Patrones de Diseño: Descubriendo los …. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://es.linkedin.com}
+    \item Adapter. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://refactoring.guru/es/design-patterns/adapter}
+    \item Adapter - Reactive Programming. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://reactiveprogramming.io/blog/es/patrones-de-diseno/adapter}
+    \item Patrón estructural Adapter. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://arantxa.ii.uam.es}
+    \item Composite. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://refactoring.guru/es/design-patterns/composite}
+    \item Patrón compuesto en Java: construcción de estructuras de …. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://translate.google.com}
+    \item Composite - Reactive Programming. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://reactiveprogramming.io/blog/es/patrones-de-diseno/composite}
+    \item Decorator. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://refactoring.guru/es/design-patterns/decorator}
+    \item Patrón Decorator: ampliación dinámica de clases. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://www.ionos.com}
+    \item Decorator - Patrones de Diseño - DevExpert. (s.f.). Recuperado el 11 de diciembre de 2024, de \url{https://devexpert.io/decorator-patrones-diseno}
+\end{enumerate}
+
+\end{document}
